@@ -139,12 +139,12 @@
 
 \section{数据分析}
 \subsection{空气质量指数与温度的关系}
-\indent 首先我们以年份为单位，将温度及PM2.5和日期的关系进行可视化，如图\ref{Fig.main1}所示
+\indent 收集到的数据中，有当日最高温度和最低温度两个数据，将这两个数据求平均值处理，得到的值作为一天的温度。以年份为单位，将温度及PM2.5和日期的关系进行可视化，如图\ref{Fig.main1}所示
 
 \begin{figure}[H] %H为当前位置，!htb为忽略美学标准，htbp为浮动图形
 \centering %图片居中
 \includegraphics[width=0.7\textwidth]{fig//pm25-temp-alltime.png} %插入图片，[]中设置图片大小，{}中是图片文件名
-\caption{2014-2020年各年PM2.5指数及气温与日期的关系图} %最终文档中希望显示的图片标题
+\caption{2014-2020年长沙地区各年PM2.5指数及气温与日期的关系图} %最终文档中希望显示的图片标题
 \label{Fig.main1} %用于文内引用的标签
 \end{figure}
 
@@ -153,7 +153,7 @@
 \begin{figure}[H] %H为当前位置，!htb为忽略美学标准，htbp为浮动图形
 \centering %图片居中
 \includegraphics[width=0.7\textwidth]{fig//pm25-temp.png} %插入图片，[]中设置图片大小，{}中是图片文件名
-\caption{2014-2020年各年PM2.5指数与气温的分布图} %最终文档中希望显示的图片标题
+\caption{2014-2020年长沙地区PM2.5指数与气温的分布图} %最终文档中希望显示的图片标题
 \label{Fig.main2} %用于文内引用的标签
 \end{figure}
 
@@ -164,48 +164,128 @@
 
 \subsection{空气质量指数与天气状况的关系}
 
-\indent 通过遍历数据，我们得到了7年来长沙地区出现过的所有天气情况，并按照降雨量/降雪量的大小将其分级，如
-
+\indent 通过遍历数据，我们得到了7年来长沙地区出现过的所有天气情况，并按照降雨量/降雪量的大小将其分级，如表\ref{table1}所示。
 
 \begin{table}[]
-    \caption{basic structure}
+    \caption{天气状况及人为分级}
     \vspace{20pt}
     \centering
-    \begin{tabular}{p{2cm}p{3cm}p{2.5cm}p{2.5cm}p{2.5cm}p{2.5cm}}
+    \begin{tabular}{ccc}
         \toprule  %添加表格头部粗线
-        气象状况& 分数\\
+        天气情况& 级别& 分级依据\\
         \midrule  %添加表格中横线
-        晴& 1\\
-        多云& 1\\
-        阴& 2\\
-        小雨& 3\\
-        小到中雨& 3\\
-        中雨& 4\\
-        阵雨& 3\\
-        雷阵雨& 3\\
-        雨& 3\\
-        中到大雨& 4\\
-        大雨& 4\\
-        大到暴雨& 4\\
-        暴雨& 4\\
-        冻雨& 3\\
-        雨夹雪& 3\\
-        小雪& 3\\
-        小雪-中雪& 3\\
-        中雪& 4\\
-        中到大雪& 4\\
-        大雪& 4\\
+        晴& 1& 一般为干燥\\
+        多云& 1& 一般为干燥天气\\
+        阴& 2& 一般湿度比较大，但没有降水\\
+        小雨& 3& 一般降水量较少\\
+        小到中雨& 3& 一般降水量较少\\
+        阵雨& 3& 一般降水量较少\\
+        雷阵雨& 3& 一般降水量较少\\
+        雨& 3& 一般降水量较少\\
+        中雨& 4& 一般降水量较大\\
+        中到大雨& 4& 一般降水量较大\\
+        大雨& 4& 一般降水量较大\\
+        大到暴雨& 4& 一般降水量较大\\
+        暴雨& 4& 一般降水量较大\\
+        冻雨& 3& 一般降水量较少\\
+        雨夹雪& 3& 一般降水量较少\\
+        小雪& 3& 一般降水量较少\\
+        小雪-中雪& 3& 一般降水量较少\\
+        中雪& 4& 一般降水量较大\\
+        中到大雪& 4& 一般降水量较大\\
+        大雪& 4& 一般降水量较大\\
         \bottomrule %添加表格底部粗线       
     \end{tabular}
-    \label{bs2}
+    \label{table1}
 \end{table}
 
+\indent 将数据中每天的两个天气信息及其对应的级别均记录下来，也就是说一个空气质量的信息对应着两个天气状况信息。得到1级天气2568次、2级天气544次、3级天气1592次、四级天气358次。
+\newpage 对四种天气下的PM2.5指数做统计，得到直方图如图\ref{Fig.main3}所示。
+
+\begin{figure}[H] %H为当前位置，!htb为忽略美学标准，htbp为浮动图形
+\centering %图片居中
+\includegraphics[width=0.7\textwidth]{fig//pm25-weather.png} %插入图片，[]中设置图片大小，{}中是图片文件名
+\caption{2014-2020年间长沙地区4钟天气情况下的PM2.5指数分布直方图} %最终文档中希望显示的图片标题
+\label{Fig.main3} %用于文内引用的标签
+\end{figure}
+
+\indent 由$E(X)=\sum_{i=1}^{n} x_{i} p_{i}$和$D(X)=\sum_{i=1}^{n}\left[x_{i}-E(X)\right]^{2} p_{i}$可计算出四种天气下PM2.5指数的期望和方差，如表\ref{table2}所示。
+
+\begin{table}[]
+    \caption{各级别天气下PM2.5指数的样本期望和方差}
+    \vspace{20pt}
+    \centering
+    \begin{tabular}{ccc}
+        \toprule  %添加表格头部粗线
+        天气级别& 期望& 方差\\
+        \midrule  %添加表格中横线
+        级别1& 130.87& 2032.00\\
+        级别2& 143.81& 2051.42\\
+        级别3& 123.16& 1993.46\\
+        级别4& 104.01& 1392.35\\
+        \bottomrule %添加表格底部粗线       
+    \end{tabular}
+    \label{table2}
+\end{table}
+
+\newpage \indent 可以看到，总体上来说，当天气的级别越高，也就是降水量越大、空气越湿润时，PM2.5指数总体上越小。另外，我们可以按照国家标准\supercite{ref5}里所规定的”中度污染“以上的标准，也就是PM2.5的IAQI值大于等于151的情况下，对四种级别的天气进行统计，如图\ref{Fig.main4}和表\ref{table3}所示。可以看到，总体上来说，当天气的级别越高，出现”中度污染“及以上的比例要减小。
+\indent 但是在级别2的天气（阴天）时，PM2.5指数的期望要比级别1（晴天和多云）要大，出现”中度污染“及以上的次数比例也要高于级别1。综上所述，PM2.5指数在不同天气下从高到低排序应该是$2>1>3>4$。
 
 
+\begin{figure}[H] %H为当前位置，!htb为忽略美学标准，htbp为浮动图形
+\centering %图片居中
+\includegraphics[width=0.7\textwidth]{fig//pm25-weather-serious.png} %插入图片，[]中设置图片大小，{}中是图片文件名
+\caption{2014-2020年间长沙地区4钟天气情况下的PM2.5指数分布直方图（中度污染及以上）} %最终文档中希望显示的图片标题
+\label{Fig.main4} %用于文内引用的标签
+\end{figure}
 
-
+\begin{table}[]
+    \caption{各级别天气下中度污染及以上天数的样本期望和数量}
+    \vspace{20pt}
+    \centering
+    \begin{tabular}{cccc}
+        \toprule  %添加表格头部粗线
+        天气级别& 期望& 出现次数& 占总数比例\\
+        \midrule  %添加表格中横线
+        级别1& 177.79& 867& $33.67\%$ \\
+        级别2& 180.49& 253& $46.51\%$ \\
+        级别3& 175.75& 469& $29.46\%$ \\
+        级别4& 169.62& 43& $12.01\%$ \\
+        \bottomrule %添加表格底部粗线       
+    \end{tabular}
+    \label{table3}
+\end{table}
 
 \subsection{空气质量指数与风速的关系}
+
+\indent 考虑到风力等级与风速并非线性关系，直接将一天中的两个风力等级数据取平均值作为一天的风力等级并不合理。故同样选择将数据中每天的两个风力等级均记录下来，也就是说一个空气质量的信息对应着两个风力等级信息。得到1级风779次，2级风779次，3级风3110次，4级风363次，5级风28次，6级风3次。然后按照3.2节中相同的处理方式，如表\ref{table4}和图\ref{Fig.main5}所示。
+
+\begin{figure}[H] %H为当前位置，!htb为忽略美学标准，htbp为浮动图形
+\centering %图片居中
+\includegraphics[width=0.7\textwidth]{fig//pm25-wind.png} %插入图片，[]中设置图片大小，{}中是图片文件名
+\caption{2014-2020年间长沙地区不同风力等级下的PM2.5指数分布直方图} %最终文档中希望显示的图片标题
+\label{Fig.main5} %用于文内引用的标签
+\end{figure}
+
+\begin{table}[]
+    \caption{各级别风力下PM2.5指数的样本期望以及“中度污染”及以上天数比例}
+    \vspace{20pt}
+    \centering
+    \begin{tabular}{cccc}
+        \toprule  %添加表格头部粗线
+        风力等级& 期望& “中度污染”及以上空气出现次数& “中度污染”及以上天数占总数比例\\
+        \midrule  %添加表格中横线
+        级别1& 115.96& 168& $21.57\%$\\
+        级别2& 115.96& 168& $21.57\%$\\
+        级别3& 136.13& 1210& $38.91\%$\\
+        级别4& 112.13& 83& $22.87\%$\\
+        级别5& 93.04& 3& $10.71\%$\\
+        级别6& 81.67& 0& $0\%$\\
+        \bottomrule %添加表格底部粗线       
+    \end{tabular}
+    \label{table4}
+\end{table}
+
 
 
 %\begin{Figure}[H]{aaa}[qwad]
@@ -295,7 +375,8 @@
     \bibitem{ref2} 李小飞,张明军,王圣杰,赵爱芳,马潜.中国空气污染指数变化特征及影响因素分析[J].环境科学,2012,33(06):1936-1943.
     \bibitem{ref3} The World Air Quality Project.Air Quality Historical Data Platform[DB/OL].https://aqicn.org/data-platform/register/,2020-12-26.
     \bibitem{ref4} 天气网.历史天气查询[DB/OL].http://lishi.tianqi.com/,2020-12-26.
-    
+    \bibitem{ref5} HJ 633—2012,环境空气质量指数（AQI）技术规定（试行）[S].中国:中华人民共和国生态环境部,2012.
+
 \end{thebibliography}
 
 \begin{appendices}

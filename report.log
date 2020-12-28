@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.7.13)  28 DEC 2020 19:22
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.7.13)  29 DEC 2020 00:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -448,8 +448,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count307
 \@lastruleclass=\count308
 \@thisrulewidth=\dimen272
-)
-No file report.aux.
+) (./report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
@@ -468,7 +467,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
 LaTeX Font Info:    ... okay on input line 78.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
 LaTeX Font Info:    ... okay on input line 78.
-ABD: EverySelectfont initializing macros
+ ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 78.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
@@ -615,85 +614,93 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--105
 
  []
 
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 112.
-
 [1
 
-]
-No file report.toc.
+] (./report.toc)
 \tf@toc=\write3
 \openout3 = `report.toc'.
 
-
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 114.
-
-[2]
-
-LaTeX Warning: Citation `ref1' on page 3 undefined on input line 129.
-
-
+ [2]
 Underfull \hbox (badness 10000) in paragraph at lines 129--131
 
  []
 
-
-LaTeX Warning: Citation `ref2' on page 3 undefined on input line 135.
-
-
-LaTeX Warning: Citation `ref3' on page 3 undefined on input line 138.
-
-
-LaTeX Warning: Citation `ref4' on page 3 undefined on input line 138.
-
-
-LaTeX Warning: Reference `Fig.main1' on page 3 undefined on input line 142.
-
 File: fig//pm25-temp-alltime.png Graphic file (type bmp)
 <fig//pm25-temp-alltime.png>
-
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 150.
-
 [3]
-
-LaTeX Warning: Reference `Fig.main2' on page 4 undefined on input line 151.
-
 File: fig//pm25-temp.png Graphic file (type bmp)
 <fig//pm25-temp.png>
 
+
+LaTeX Warning: Reference `table1' on page 4 undefined on input line 167.
+
+
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 170.
-
-
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 233.
+               Default added (so using `tbp') on input line 169.
 
 [4]
 
-LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 269.
+LaTeX Warning: Reference `Fig.main3' on page 5 undefined on input line 203.
+
+File: fig//pm25-weather.png Graphic file (type bmp)
+<fig//pm25-weather.png>
+
+LaTeX Warning: Reference `table2' on page 5 undefined on input line 212.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 214.
 
 [5]
-Underfull \hbox (badness 7869) in paragraph at lines 293--295
+
+LaTeX Warning: Citation `ref5' on page 6 undefined on input line 231.
+
+
+LaTeX Warning: Reference `Fig.main4' on page 6 undefined on input line 231.
+
+
+LaTeX Warning: Reference `table3' on page 6 undefined on input line 231.
+
+File: fig//pm25-weather-serious.png Graphic file (type bmp)
+<fig//pm25-weather-serious.png>
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 242.
+
+
+LaTeX Warning: Reference `table4' on page 6 undefined on input line 261.
+
+
+LaTeX Warning: Reference `Fig.main5' on page 6 undefined on input line 261.
+
+File: fig//pm25-wind.png Graphic file (type bmp)
+<fig//pm25-wind.png>
+[6]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 270.
+
+
+Overfull \hbox (12.37599pt too wide) in paragraph at lines 274--287
+ [][] 
+ []
+
+[7]
+Underfull \hbox (badness 7869) in paragraph at lines 373--375
 []\TU/SimSun(0)/m/n/9 中 华 人 民 共 和 国 生 态 环 境 部\TU/lmr/m/n/9 . \TU/SimSun(0)/m/n/9 生 态 环 境 部 举 行 党 的 十 九 届 五 中 全 会 精 神 辅 导 报 告 会
  []
 
 
-Overfull \hbox (3.30693pt too wide) in paragraph at lines 293--295
+Overfull \hbox (3.30693pt too wide) in paragraph at lines 373--375
 \TU/lmr/m/n/9 [EB/OL].https://www.mee.gov.cn/xxgk2018/xxgk/xxgk15/202012/t20201212812690.html,2020-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--297
+Underfull \hbox (badness 10000) in paragraph at lines 376--377
 []\TU/lmr/m/n/9 The World Air Quality Project.Air Quality Historical Data
  []
 
-
-LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 311.
-
-[6]
-
-Package lastpage Warning: Rerun to get the references right on input line 312.
-
-
+[8] 
 AED: lastpage setting LastPage
 (./report.aux)
 
@@ -704,12 +711,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 8796 strings out of 481358
- 227276 string characters out of 5927881
- 517033 words of memory out of 5000000
- 26031 multiletter control sequences out of 15000+600000
+ 8870 strings out of 481358
+ 230383 string characters out of 5927881
+ 515089 words of memory out of 5000000
+ 26098 multiletter control sequences out of 15000+600000
  536588 words of font info for 74 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  56i,12n,71p,594b,367s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.pdf (6 pages).
+Output written on report.pdf (8 pages).
