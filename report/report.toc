@@ -7,7 +7,7 @@
 \contentsline {subsection}{\numberline {3.2}空气质量指数与天气状况的关系}{4}%
 \contentsline {subsection}{\numberline {3.3}空气质量指数与风速的关系}{6}%
 \contentsline {section}{\numberline {4}结论与展望}{7}%
-\contentsline {section}{\numberline {5}公式}{7}%
-\contentsline {section}{\numberline {6}结束}{7}%
-\contentsline {section}{\numberline {A}Python爬虫代码}{8}%
-\contentsline {section}{\numberline {B}Python数据分析代码}{8}%
+\contentsline {subsection}{\numberline {4.1}结论}{7}%
+\contentsline {subsection}{\numberline {4.2}展望}{8}%
+\contentsline {section}{\numberline {A}Python爬虫代码}{10}%
+\contentsline {section}{\numberline {B}Python数据分析代码}{11}%

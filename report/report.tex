@@ -31,6 +31,40 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{booktabs}
+\usepackage{listings}
+\usepackage{color}
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  language=Octave,                % the language of the code
+  basicstyle=\footnotesize,           % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
+  stepnumber=1,                   % the step between two line-numbers. If it's 1, each line 
+                                  % will be numbered
+  numbersep=5pt,                  % how far the line-numbers are from the code
+  backgroundcolor=\color{white},      % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=2,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  title=\lstname,                   % show the filename of files included with \lstinputlisting;
+                                  % also try caption instead of title
+  keywordstyle=\color{blue},          % keyword style
+  commentstyle=\color{dkgreen},       % comment style
+  stringstyle=\color{mauve},         % string literal style
+  escapeinside={\%*}{*)},            % if you want to add LaTeX within your code
+  morekeywords={*,...}               % if you want to add more keywords to the set
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %定义页边距
@@ -68,6 +102,7 @@
 \title{\textbf{\huge{2014-2020年长沙地区空气质量与气象因素的相关性分析}}}
 \author{唐亚周 \quad 519021910804\\
 电子信息与电气工程学院 \ 计算机科学与技术专业\\
+指导老师：皮玲\\
 }
 \date{}  % 这一行用来去掉默认的日期显示
 
@@ -101,7 +136,7 @@
 %在这里写中文摘要
 %heiti表示....黑体，kaishu是楷书，还有songti宋体，lishu隶书，fangsong仿宋
 \parbox{\textwidth}{
-{\heiti 摘~~~要}\quad {\kaishu 一直以来，空气质量问题都是我国城市化发展过程中亟待解决的难题。长沙市作为一座快速发展的新一线城市，空气质量问题自然十分关键。本文以天为单位，通过分析以PM2.5为代表的空气质量指数和当天的天气状况、气温、风速等指标的关系，得出一系列结论。}\\\\
+{\heiti 摘~~~要}\quad {\kaishu 一直以来，空气质量问题都是我国城市化发展过程中亟待解决的难题。长沙市作为一座快速发展的新一线城市，空气质量问题自然十分关键。本文以天为单位，通过分析以$PM_{2.5}$为代表的空气质量指数和当天的天气状况、气温、风速等指标的关系，得出一系列结论。}\\\\
 {\heiti 关键词} \quad {\kaishu 空气质量，长沙，天气，量化分析}}
 \end{center}
 \vspace{0.5cm}
@@ -139,28 +174,28 @@
 
 \section{数据分析}
 \subsection{空气质量指数与温度的关系}
-\indent 收集到的数据中，有当日最高温度和最低温度两个数据，将这两个数据求平均值处理，得到的值作为一天的温度。以年份为单位，将温度及PM2.5和日期的关系进行可视化，如图\ref{Fig.main1}所示
+\indent 收集到的数据中，有当日最高温度和最低温度两个数据，将这两个数据求平均值处理，得到的值作为一天的温度。以年份为单位，将温度及$PM_{2.5}$和日期的关系进行可视化，如图\ref{Fig.main1}所示
 
 \begin{figure}[H] %H为当前位置，!htb为忽略美学标准，htbp为浮动图形
 \centering %图片居中
-\includegraphics[width=0.7\textwidth]{fig//pm25-temp-alltime.png} %插入图片，[]中设置图片大小，{}中是图片文件名
-\caption{2014-2020年长沙地区各年PM2.5指数及气温与日期的关系图} %最终文档中希望显示的图片标题
+\includegraphics[width=0.7\textwidth]{..//fig//pm25-temp-alltime.png} %插入图片，[]中设置图片大小，{}中是图片文件名
+\caption{2014-2020年长沙地区各年$PM_{2.5}$指数及气温与日期的关系图} %最终文档中希望显示的图片标题
 \label{Fig.main1} %用于文内引用的标签
 \end{figure}
 
-\indent 可以看出，总体上PM2.5指数与气温呈负相关。然后对于PM2.5指数和气温绘制二维直方图，如图\ref{Fig.main2}所示，并使用Python内置函数计算相关系数。
+\indent 可以看出，总体上$PM_{2.5}$指数与气温呈负相关。然后对于$PM_{2.5}$指数和气温绘制二维直方图，如图\ref{Fig.main2}所示，并使用Python内置函数计算相关系数。
 
 \begin{figure}[H] %H为当前位置，!htb为忽略美学标准，htbp为浮动图形
 \centering %图片居中
-\includegraphics[width=0.7\textwidth]{fig//pm25-temp.png} %插入图片，[]中设置图片大小，{}中是图片文件名
-\caption{2014-2020年长沙地区PM2.5指数与气温的分布图} %最终文档中希望显示的图片标题
+\includegraphics[width=0.7\textwidth]{..//fig//pm25-temp.png} %插入图片，[]中设置图片大小，{}中是图片文件名
+\caption{2014-2020年长沙地区$PM_{2.5}$指数与气温的分布图} %最终文档中希望显示的图片标题
 \label{Fig.main2} %用于文内引用的标签
 \end{figure}
 
 \begin{equation}
 \rho_{XY} =  \frac{\operatorname{cov}(X, Y)}{\sqrt{\operatorname{D}(X) \cdot \operatorname{D}(Y)}} = -0.35
 \end{equation}
-\indent 由此看出，PM2.5指数与温度呈一定的负相关，但相关性并不明显。
+\indent 由此看出，$PM_{2.5}$指数与温度呈一定的负相关，但相关性并不明显。
 
 \subsection{空气质量指数与天气状况的关系}
 
@@ -200,19 +235,19 @@
 \end{table}
 
 \indent 将数据中每天的两个天气信息及其对应的级别均记录下来，也就是说一个空气质量的信息对应着两个天气状况信息。得到1级天气2568次、2级天气544次、3级天气1592次、四级天气358次。
-\newpage 对四种天气下的PM2.5指数做统计，得到直方图如图\ref{Fig.main3}所示。
+\newpage 对四种天气下的$PM_{2.5}$指数做统计，得到直方图如图\ref{Fig.main3}所示。
 
 \begin{figure}[H] %H为当前位置，!htb为忽略美学标准，htbp为浮动图形
 \centering %图片居中
-\includegraphics[width=0.7\textwidth]{fig//pm25-weather.png} %插入图片，[]中设置图片大小，{}中是图片文件名
-\caption{2014-2020年间长沙地区4钟天气情况下的PM2.5指数分布直方图} %最终文档中希望显示的图片标题
+\includegraphics[width=0.7\textwidth]{..//fig//pm25-weather.png} %插入图片，[]中设置图片大小，{}中是图片文件名
+\caption{2014-2020年间长沙地区4钟天气情况下的$PM_{2.5}$指数分布直方图} %最终文档中希望显示的图片标题
 \label{Fig.main3} %用于文内引用的标签
 \end{figure}
 
-\indent 由$E(X)=\sum_{i=1}^{n} x_{i} p_{i}$和$D(X)=\sum_{i=1}^{n}\left[x_{i}-E(X)\right]^{2} p_{i}$可计算出四种天气下PM2.5指数的期望和方差，如表\ref{table2}所示。
+\indent 由$E(X)=\sum_{i=1}^{n} x_{i} p_{i}$和$D(X)=\sum_{i=1}^{n}\left[x_{i}-E(X)\right]^{2} p_{i}$可计算出四种天气下$PM_{2.5}$指数的期望和方差，如表\ref{table2}所示。
 
 \begin{table}[]
-    \caption{各级别天气下PM2.5指数的样本期望和方差}
+    \caption{各级别天气下$PM_{2.5}$指数的样本期望和方差}
     \vspace{20pt}
     \centering
     \begin{tabular}{ccc}
@@ -228,14 +263,14 @@
     \label{table2}
 \end{table}
 
-\newpage \indent 可以看到，总体上来说，当天气的级别越高，也就是降水量越大、空气越湿润时，PM2.5指数总体上越小。另外，我们可以按照国家标准\supercite{ref5}里所规定的”中度污染“以上的标准，也就是PM2.5的IAQI值大于等于151的情况下，对四种级别的天气进行统计，如图\ref{Fig.main4}和表\ref{table3}所示。可以看到，总体上来说，当天气的级别越高，出现”中度污染“及以上的比例要减小。
-\indent 但是在级别2的天气（阴天）时，PM2.5指数的期望要比级别1（晴天和多云）要大，出现”中度污染“及以上的次数比例也要高于级别1。综上所述，PM2.5指数在不同天气下从高到低排序应该是$2>1>3>4$。
+\newpage \indent 可以看到，总体上来说，当天气的级别越高，也就是降水量越大、空气越湿润时，$PM_{2.5}$指数总体上越小。另外，我们可以按照国家标准\supercite{ref5}里所规定的”中度污染“以上的标准，也就是$PM_{2.5}$的IAQI值大于等于151的情况下，对四种级别的天气进行统计，如图\ref{Fig.main4}和表\ref{table3}所示。可以看到，总体上来说，当天气的级别越高，出现”中度污染“及以上的比例要减小。
+\indent 但是在级别2的天气（阴天）时，$PM_{2.5}$指数的期望要比级别1（晴天和多云）要大，出现”中度污染“及以上的次数比例也要高于级别1。综上所述，$PM_{2.5}$指数在不同天气下从高到低排序应该是$2>1>3>4$。
 
 
 \begin{figure}[H] %H为当前位置，!htb为忽略美学标准，htbp为浮动图形
 \centering %图片居中
-\includegraphics[width=0.7\textwidth]{fig//pm25-weather-serious.png} %插入图片，[]中设置图片大小，{}中是图片文件名
-\caption{2014-2020年间长沙地区4钟天气情况下的PM2.5指数分布直方图（中度污染及以上）} %最终文档中希望显示的图片标题
+\includegraphics[width=0.7\textwidth]{..//fig//pm25-weather-serious.png} %插入图片，[]中设置图片大小，{}中是图片文件名
+\caption{2014-2020年间长沙地区4钟天气情况下的$PM_{2.5}$指数分布直方图（中度污染及以上）} %最终文档中希望显示的图片标题
 \label{Fig.main4} %用于文内引用的标签
 \end{figure}
 
@@ -258,115 +293,55 @@
 
 \subsection{空气质量指数与风速的关系}
 
-\indent 考虑到风力等级与风速并非线性关系，直接将一天中的两个风力等级数据取平均值作为一天的风力等级并不合理。故同样选择将数据中每天的两个风力等级均记录下来，也就是说一个空气质量的信息对应着两个风力等级信息。得到1级风779次，2级风779次，3级风3110次，4级风363次，5级风28次，6级风3次。然后按照3.2节中相同的处理方式，如表\ref{table4}和图\ref{Fig.main5}所示。
+\indent 在收集到的数据中，一天当中可能有2-4个风力等级的数据。考虑到风力等级与风速并非线性关系，直接将一天中的所有风力等级数据取平均值作为一天的风力等级并不合理。故同样选择将数据中每天的所有风力等级均记录下来，也就是说一个空气质量的信息对应着2-4个风力等级信息。得到1级风1558次，2级风1558次，3级风3450次，4级风680次，5级风54次，6级风5次。然后按照3.2节中相同的处理方式，如表\ref{table4}和图\ref{Fig.main5}所示。\footnote{其中1级风和2级风的数据完全相同，原因是在原始数据中，所有的1、2级风均被描述为“1-2级风”。}
 
 \begin{figure}[H] %H为当前位置，!htb为忽略美学标准，htbp为浮动图形
 \centering %图片居中
-\includegraphics[width=0.7\textwidth]{fig//pm25-wind.png} %插入图片，[]中设置图片大小，{}中是图片文件名
-\caption{2014-2020年间长沙地区不同风力等级下的PM2.5指数分布直方图} %最终文档中希望显示的图片标题
+\includegraphics[width=0.7\textwidth]{..//fig//pm25-wind.png} %插入图片，[]中设置图片大小，{}中是图片文件名
+\caption{2014-2020年间长沙地区不同风力等级下的$PM_{2.5}$指数分布直方图} %最终文档中希望显示的图片标题
 \label{Fig.main5} %用于文内引用的标签
 \end{figure}
 
 \begin{table}[]
-    \caption{各级别风力下PM2.5指数的样本期望以及“中度污染”及以上天数比例}
+    \caption{各级别风力下$PM_{2.5}$指数的样本期望以及“中度污染”及以上天数比例}
     \vspace{20pt}
     \centering
     \begin{tabular}{cccc}
         \toprule  %添加表格头部粗线
         风力等级& 期望& “中度污染”及以上空气出现次数& “中度污染”及以上天数占总数比例\\
         \midrule  %添加表格中横线
-        级别1& 115.96& 168& $21.57\%$\\
-        级别2& 115.96& 168& $21.57\%$\\
-        级别3& 136.13& 1210& $38.91\%$\\
-        级别4& 112.13& 83& $22.87\%$\\
-        级别5& 93.04& 3& $10.71\%$\\
-        级别6& 81.67& 0& $0\%$\\
+        级别1（软风）& 115.96& 336& $21.57\%$\\
+        级别2（轻风）& 115.96& 336& $21.57\%$\\
+        级别3（微风）& 133.78& 1287& $37.30\%$\\
+        级别4（和风）& 112.60& 159& $23.38\%$\\
+        级别5（清风）& 99.98& 9& $16.67\%$\\
+        级别6（强风）& 82.80& 0& $0\%$\\
         \bottomrule %添加表格底部粗线       
     \end{tabular}
     \label{table4}
 \end{table}
 
-
-
-%\begin{Figure}[H]{aaa}[qwad]
-%%pic和tex文件保存在同一路径下
-%\graphfile[30]{1.png}[picture]
-%%相对路径(推荐)，可以在tex所在路径建立一个fig 文件夹放图片
-%%\graphfile[60]{fig//1.png}[picture]
-%%绝对路径，从电脑任意位置寻找图片
-%%\graphfile[30]{C://Users//TstarYSY//Desktop//fig//1.png}[picture]
-%\end{Figure}
-%% \noindent 取消首行缩进
-%\noindent 南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛\par
-%南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛
-%\par
-%\begin{Figure}[H]{asdf}[111]
-%\graphfile[34]{1.png}[picture1]
-%\graphfile[36]{1.png}[picture2]
-%\par
-%\end{Figure}
+\indent 由此可见，当风力等级为3级时，$PM_{2.5}$指数最高，风较小或较大时，$PM_{2.5}$指数都较低。
 
 \section{结论与展望}
-南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛
-\par
 
-\noindent 南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛
-\section{公式}
-南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛
-\noindent
+\subsection{结论}
 
-\par\noindent
-南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛南无阿弥陀佛
-\section{结束}
+\indent 经过对于气温、天气状况（降水量）和风力等级这3个影响因素的分析，可以得到以下关于长沙地区$PM_{2.5}$指数的结论：
+\begin{enumerate}
+    \item 与气温呈负相关，夏季$PM_{2.5}$指数要低于冬季。但我认为气温并非直接影响$PM_{2.5}$指数的原因。冬季气候寒冷，人们燃煤取暖带来的污染增加，使$PM_{2.5}$指数上升；再加上冬季气候干燥，$PM_{2.5}$可以长时间存在于空气中。因此气温只能算作间接影响了空气质量。
+    \item 阴天时最高，其次是晴天/多云，然后是较小的雨雪天气，最后是较大的雨雪天气。雨雪天气导致空气质量变好，主要是因为其对空气中的悬浮物有着洗涤的作用。同时许多资料\supercite{ref6}\supercite{ref7}显示，阴天并不意味着空气质量差。因此统计得出的阴天$PM_{2.5}$指数最高并没有合理的解释。
+    \item 微风时最高，其次是和风、软风和轻风，在清风和强风时最低。资料\supercite{ref8}\supercite{ref9}显示，风确实可以影响$PM_{2.5}$指数，但是需要较大的风力，而且和风向有关，但本次研究并没有考虑到风向的影响。因此得出结论，风速达到一定程度（4级及以上）时，风速越大，$PM_{2.5}$指数越小，空气质量越好。
+\end{enumerate}
 
+\subsection{展望}
 
-\begin{itemize}
-    \item 身是菩提树，心如明镜台
-    \item 时时勤拂拭，勿使惹尘埃.
-    \item 菩提本无树，明镜亦非台
-    \item 本来无一物，何处惹尘埃.
-\end{itemize}
-
-\vspace{3ex}
-\begin{table}[h]
-    \centering
-    %{|l|c|c|}指明有3列而且对其方式是左中中，|表示要加竖线
-    %\hline表示添加横线
-    \begin{tabular}{|l|c|c|}\hline
-        %&表示一个单元格内容结束
-        %multicolumn{n}{...}{...}表示合并n个单元格，指明对齐方式和内容
-        Setting&\multicolumn{2}{c|}{A4 size paper}\\\hline
-        &mm&inches\\
-        Top&25&1.0\\
-        Bottom&25&1.0\\
-        Left&20&0.8\\
-        Right&20&0.8\\
-        Column Width&82&3.2\\
-        Column Spacing&6&0.25\\\hline
-    \end{tabular}
-    \caption{a table}
-    \label{tab:table1}
-\end{table}
-\vspace{3ex}
-
-\begin{figure}[h]
-\begin{minipage}[h]{0.48\linewidth}
-\[\alpha  \ge \delta {\rm{ + }}\overline {\eta  * \beta } \]
-\end{minipage}
-\begin{minipage}[h]{0.48\linewidth}
-\[\left[ {\begin{array}{*{20}{c}}
-{{a_1}}&{{a_2}}&\alpha &\beta \\
-\chi &\varphi &\gamma &\eta \\
-\theta &{{\zeta _3}}&\xi &\omega
-\end{array}} \right]\]
-\end{minipage}
-\vspace{3ex}
-\caption{aaa}
-\end {figure}
+\indent 本课题以一定数据对长沙地区的PM2.5指数的影响因素进行了分析探究，从气象特征方面给出了结论。但对空气质量影响更大的因素并非气象特征，而是人类活动，比如燃煤、工业废气、汽车尾气等。但由于时间和数据来源的限制，不能在本课题中进行探究。随着气候变化的加剧和空气质量的下降，人类的生存环境面临着较大的危险。因此，我们每个人都要养成节能减排的生活方式，为气候环境的保护贡献自己的力量。
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  参考文献
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \small
 \begin{thebibliography}{99}
     \setlength{\parskip}{0pt}  %段落之间的竖直距离
@@ -376,14 +351,25 @@
     \bibitem{ref3} The World Air Quality Project.Air Quality Historical Data Platform[DB/OL].https://aqicn.org/data-platform/register/,2020-12-26.
     \bibitem{ref4} 天气网.历史天气查询[DB/OL].http://lishi.tianqi.com/,2020-12-26.
     \bibitem{ref5} HJ 633—2012,环境空气质量指数（AQI）技术规定（试行）[S].中国:中华人民共和国生态环境部,2012.
-
+    \bibitem{ref6} 新京报.北京空气质量降为二级良 专家：阴天不意味着污染[EB/OL].http://www.chinanews.com/gn/2015/09-05/7505775.shtml,2015-9-5.
+    \bibitem{ref7} 人民网.成都上空灰蒙蒙？官方解释：阴天不一定是污染天[EB/OL].http://sc.sina.com.cn/news/b/2020-01-12/detail-iihnzhha1856304.shtml,2020-1-12.
+    \bibitem{ref8} 江晨阳. 韶山风环境及城市植被对$PM_{2.5}$浓度影响的研究[D].湖南大学,2019.
+    \bibitem{ref8} 徐迎春,谌伟,刘佳颖,刘佩廷.小时气象要素对$PM_{2.5}$浓度的影响[J].环境与发展,2019,31(04):173+221.
 \end{thebibliography}
 
+\newpage
 \begin{appendices}
     \section{Python爬虫代码}
-    some text in Appendix A
+    \lstinputlisting[
+    caption     =   {\bf dataCollect.py},
+    label       =   {dataCollect.py}
+]{..//src//dataCollect.py}
+
     \section{Python数据分析代码}
-    some text in Appendix B
+    \lstinputlisting[
+    caption     =   {\bf dataAnalyse.py},
+    label       =   {dataAnalyse.py}
+]{..//src//dataAnalyse.py}
  \end{appendices}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.7.13)  29 DEC 2020 00:31
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.7.13)  29 DEC 2020 12:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -448,86 +448,124 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count307
 \@lastruleclass=\count308
 \@thisrulewidth=\dimen272
-) (./report.aux)
+) (d:/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count309
+\lst@gtempboxa=\box104
+\lst@token=\toks26
+\lst@length=\count310
+\lst@currlwidth=\dimen273
+\lst@column=\count311
+\lst@pos=\count312
+\lst@lostspace=\dimen274
+\lst@width=\dimen275
+\lst@newlines=\count313
+\lst@lineno=\count314
+\lst@maxwidth=\dimen276
+ (d:/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count315
+\lst@skipnumbers=\count316
+\lst@framebox=\box105
+) (d:/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (d:/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
+ (d:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: xetex.def on input line 147.
+) (d:/texlive/2020/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (d:/texlive/2020/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
+Package: xeCJK-listings 2020/02/18 v3.8.2 xeCJK patch file for listings
+\l__xeCJK_listings_max_char_int=\count317
+\l__xeCJK_listings_flag_int=\count318
+) (./report.aux
+
+LaTeX Warning: Label `ref8' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 78.
+LaTeX Info: Redefining \selectfont on input line 113.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 78.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 78.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 78.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 78.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 78.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 78.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 78.
-LaTeX Font Info:    Redeclaring math accent \check on input line 78.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 78.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 78.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 78.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 78.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 113.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 113.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 113.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 113.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 113.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 113.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 113.
+LaTeX Font Info:    Redeclaring math accent \check on input line 113.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 113.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 113.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 113.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 113.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 78.
+(Font)              `operators' in the math version `normal' on input line 113.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 78.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 113.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 78.
+(Font)              `operators' in the math version `bold' on input line 113.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 78.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 113.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 78.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 78.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 78.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 78.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 78.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 113.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 78.
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 78.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 78.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 78.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 113.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 78.
+(lastpage)             ! on input line 113.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -563,6 +601,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+\c@lstlisting=\count319
 
 Package fontspec Info: Could not resolve font "SimHei/BI" (it probably doesn't
 (fontspec)             exist).
@@ -610,7 +649,7 @@ Package fontspec Info: Font family 'KaiTi(0)' created for font 'KaiTi' with
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--105
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
 
  []
 
@@ -621,102 +660,98 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--105
 \openout3 = `report.toc'.
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 129--131
+Underfull \hbox (badness 10000) in paragraph at lines 164--166
 
  []
 
-File: fig//pm25-temp-alltime.png Graphic file (type bmp)
-<fig//pm25-temp-alltime.png>
+File: ..//fig//pm25-temp-alltime.png Graphic file (type bmp)
+<..//fig//pm25-temp-alltime.png>
 [3]
-File: fig//pm25-temp.png Graphic file (type bmp)
-<fig//pm25-temp.png>
-
-
-LaTeX Warning: Reference `table1' on page 4 undefined on input line 167.
+File: ..//fig//pm25-temp.png Graphic file (type bmp)
+<..//fig//pm25-temp.png>
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 169.
+               Default added (so using `tbp') on input line 204.
 
 [4]
-
-LaTeX Warning: Reference `Fig.main3' on page 5 undefined on input line 203.
-
-File: fig//pm25-weather.png Graphic file (type bmp)
-<fig//pm25-weather.png>
-
-LaTeX Warning: Reference `table2' on page 5 undefined on input line 212.
+File: ..//fig//pm25-weather.png Graphic file (type bmp)
+<..//fig//pm25-weather.png>
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 214.
+               Default added (so using `tbp') on input line 249.
 
 [5]
+File: ..//fig//pm25-weather-serious.png Graphic file (type bmp)
+<..//fig//pm25-weather-serious.png>
 
-LaTeX Warning: Citation `ref5' on page 6 undefined on input line 231.
-
-
-LaTeX Warning: Reference `Fig.main4' on page 6 undefined on input line 231.
-
-
-LaTeX Warning: Reference `table3' on page 6 undefined on input line 231.
-
-File: fig//pm25-weather-serious.png Graphic file (type bmp)
-<fig//pm25-weather-serious.png>
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 242.
+               Default added (so using `tbp') on input line 277.
 
-
-LaTeX Warning: Reference `table4' on page 6 undefined on input line 261.
-
-
-LaTeX Warning: Reference `Fig.main5' on page 6 undefined on input line 261.
-
-File: fig//pm25-wind.png Graphic file (type bmp)
-<fig//pm25-wind.png>
+File: ..//fig//pm25-wind.png Graphic file (type bmp)
+<..//fig//pm25-wind.png>
 [6]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 270.
+               Default added (so using `tbp') on input line 305.
 
 
-Overfull \hbox (12.37599pt too wide) in paragraph at lines 274--287
+Overfull \hbox (35.04193pt too wide) in paragraph at lines 309--322
  [][] 
  []
 
-[7]
-Underfull \hbox (badness 7869) in paragraph at lines 373--375
+
+LaTeX Warning: Citation `ref9' on page 7 undefined on input line 334.
+
+[7] [8]
+Underfull \hbox (badness 7869) in paragraph at lines 348--350
 []\TU/SimSun(0)/m/n/9 中 华 人 民 共 和 国 生 态 环 境 部\TU/lmr/m/n/9 . \TU/SimSun(0)/m/n/9 生 态 环 境 部 举 行 党 的 十 九 届 五 中 全 会 精 神 辅 导 报 告 会
  []
 
 
-Overfull \hbox (3.30693pt too wide) in paragraph at lines 373--375
+Overfull \hbox (3.30693pt too wide) in paragraph at lines 348--350
 \TU/lmr/m/n/9 [EB/OL].https://www.mee.gov.cn/xxgk2018/xxgk/xxgk15/202012/t20201212812690.html,2020-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--377
+Underfull \hbox (badness 10000) in paragraph at lines 351--352
 []\TU/lmr/m/n/9 The World Air Quality Project.Air Quality Historical Data
  []
 
-[8] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
+[]\TU/SimSun(0)/m/n/9 新 京 报\TU/lmr/m/n/9 . \TU/SimSun(0)/m/n/9 北 京 空 气 质 量 降 为 二 级 良 专 家：|  阴 天 不 意 味 着 污 染
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
+[]\TU/SimSun(0)/m/n/9 人 民 网\TU/lmr/m/n/9 . \TU/SimSun(0)/m/n/9 成 都 上 空 灰 蒙 蒙？|  官 方 解 释：|  阴 天 不 一 定 是 污 染 天
+ []
+
+
+Underfull \hbox (badness 3657) in paragraph at lines 357--358
+[]\TU/SimSun(0)/m/n/9 徐 迎 春\TU/lmr/m/n/9 , \TU/SimSun(0)/m/n/9 谌 伟\TU/lmr/m/n/9 , \TU/SimSun(0)/m/n/9 刘 佳 颖\TU/lmr/m/n/9 , \TU/SimSun(0)/m/n/9 刘 佩 廷\TU/lmr/m/n/9 . \TU/SimSun(0)/m/n/9 小 时 气 象 要 素 对 $\OML/cmm/m/it/9 PM[]$ \TU/SimSun(0)/m/n/9 浓 度 的 影 响 \TU/lmr/m/n/9 [J]. \TU/SimSun(0)/m/n/9 环 境 与 发
+ []
+
+[9] (..//src//dataCollect.py) [10] (..//src//dataAnalyse.py [11] [12] [13] [14]) [15] 
 AED: lastpage setting LastPage
 (./report.aux)
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8870 strings out of 481358
- 230383 string characters out of 5927881
- 515089 words of memory out of 5000000
- 26098 multiletter control sequences out of 15000+600000
- 536588 words of font info for 74 fonts, out of 8000000 for 9000
+ 11056 strings out of 481358
+ 266617 string characters out of 5927881
+ 919799 words of memory out of 5000000
+ 28248 multiletter control sequences out of 15000+600000
+ 537733 words of font info for 79 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 56i,12n,71p,594b,367s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,13n,71p,594b,1710s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.pdf (8 pages).
+Output written on report.pdf (15 pages).

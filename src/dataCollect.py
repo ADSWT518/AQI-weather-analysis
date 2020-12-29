@@ -1,4 +1,6 @@
 #coding=utf-8
+# 代码参考：https://blog.csdn.net/qq_31903733/article/details/85269367
+
 import io
 import sys
 import requests
