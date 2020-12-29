@@ -38,7 +38,7 @@ weatherList = [[] for i in range(7)]
 
 tempList = [[] for i in range(7)]
 
-windList = [[] for i in range(7)]
+windList = [[] for i in range(2531)]
 
 pm25List = [[] for i in range(7)]
 pm25DayList = []
@@ -132,9 +132,9 @@ def getWeather():
                                 re.findall(r"\d+\.?\d*",
                                            row2[0].split(',')[3])))
                         # print(wind)
+                        # print(count)
+                        windList[count] = wind[:]
 
-                        windList[i - 14].append(wind[0])
-                        windList[i - 14].append(wind[1])
 
                         count += 1
                         # print(windScale)
@@ -147,7 +147,8 @@ def getWeather():
 
         # print(tempList)
         # print(len(tempList))
-
+        # print(windList)
+        # print([i for item in windList for i in item])
         # print(pd.value_counts([i for item in windList for i in item]))
         # print(len([i for item in windList for i in item]))
 
@@ -240,16 +241,16 @@ def display2():
     W = [i for item in weatherList for i in item]
 
     for index in range(len(W)):
-        if PM[int(index / 2)] <= 150:
+        if PM[int(index / 4)] <= 150:
             continue
         if W[index] == 1:
-            pm25ForWeather[0].append(PM[int(index / 2)])
+            pm25ForWeather[0].append(PM[int(index / 4)])
         elif W[index] == 2:
-            pm25ForWeather[1].append(PM[int(index / 2)])
+            pm25ForWeather[1].append(PM[int(index / 4)])
         elif W[index] == 3:
-            pm25ForWeather[2].append(PM[int(index / 2)])
+            pm25ForWeather[2].append(PM[int(index / 4)])
         elif W[index] == 4:
-            pm25ForWeather[3].append(PM[int(index / 2)])
+            pm25ForWeather[3].append(PM[int(index / 4)])
         else:
             print("WTF?")
     print(len(pm25ForWeather))
@@ -291,25 +292,29 @@ def display3():
     pm25ForWind = [[] for i in range(6)]
 
     PM = [i for item in pm25List for i in item]
-    W = [i for item in windList for i in item]
+    # W = [i for item in windList for i in item]
 
-    for index in range(len(W)):
-        if PM[int(index / 2)] <= 150:
+    for index in range(len(windList)):
+        if PM[index] <= 150:
             continue
-        if W[index] == 1:
-            pm25ForWind[0].append(PM[int(index / 2)])
-        elif W[index] == 2:
-            pm25ForWind[1].append(PM[int(index / 2)])
-        elif W[index] == 3:
-            pm25ForWind[2].append(PM[int(index / 2)])
-        elif W[index] == 4:
-            pm25ForWind[3].append(PM[int(index / 2)])
-        elif W[index] == 5:
-            pm25ForWind[4].append(PM[int(index / 2)])
-        elif W[index] == 6:
-            pm25ForWind[5].append(PM[int(index / 2)])
-        else:
-            print("WTF?")
+        for j in windList[index]:
+
+
+
+            if j == 1:
+                pm25ForWind[0].append(PM[index])
+            elif j == 2:
+                pm25ForWind[1].append(PM[index])
+            elif j == 3:
+                pm25ForWind[2].append(PM[index])
+            elif j == 4:
+                pm25ForWind[3].append(PM[index])
+            elif j == 5:
+                pm25ForWind[4].append(PM[index])
+            elif j == 6:
+                pm25ForWind[5].append(PM[index])
+            else:
+                print("WTF?")
 
     print(len(pm25ForWind))
     print(len(pm25ForWind[0]))
